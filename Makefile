@@ -1,6 +1,7 @@
 run:
 	docker build -t containerexample:v1 .
-	docker run -it --privileged -v /Users/denghong.yan/GoProjects/containerexample:/go --name containerexample_demo containerexample:v1 /bin/bash
+	#docker run -it --privileged -v /Users/denghong.yan/GoProjects/containerexample:/go --name containerexample_demo containerexample:v1 /bin/bash
+	docker run -it --privileged --name containerexample_demo containerexample:v1 /bin/bash
 
 uts:
 	go run utsnamespace.go
